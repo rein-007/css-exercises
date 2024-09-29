@@ -1,0 +1,22 @@
+.numbers {
+    background: rgb(250, 151, 167);
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+}
+
+#number2 {
+    color: blue;
+    font-size: 36px;
+}
+
+.number3 {
+    font-size: 24px;
+}
+
+#number4 {
+    background: rgb(119, 255, 119);
+    font-weight: bold;
+}
+
+.number4 {
+    font-size: 24px;
+}
