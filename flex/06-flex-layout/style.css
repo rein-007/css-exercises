@@ -27,21 +27,43 @@ input {
 
 a {
   text-decoration: none;
+  color: gray;
 }
 
 ul {
   list-style-type: none;
-}
-
-.header {
   display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
 }
 
-.left-links, .right-links {
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  padding: 10px;
+  margin-bottom: 220px;
+}
+
+.content {
   display: flex;
   align-items: center;
-  gap: 16px;
-  height: 100px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.footer {
+  background-color: lightgray;
 }
