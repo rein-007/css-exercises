@@ -89,3 +89,68 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* SOLUTION */
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) 5fr;
+  grid-template-rows: minmax(40px, 80px) 70px 5fr minmax(20px, 40px);
+  gap: 4px;
+  grid-template-areas: "header header"
+  "sidebar nav"
+  "sidebar article"
+  "footer footer"
+}
+
+ul li {
+  list-style: none;
+  display: inline-grid;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: minmax(10px, 30px);
+}
+
+.logo {
+  justify-self: flex-start;
+}
+
+.header ul li {
+  margin-right: 100px;
+  justify-self: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+  gap: 30px;
+}
+
+.sidebar div {
+  align-content: center;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.nav ul li {
+  margin-right: 200px;
+}
+
+.article {
+  grid-area: article;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.footer {
+  grid-area: footer;
+}
